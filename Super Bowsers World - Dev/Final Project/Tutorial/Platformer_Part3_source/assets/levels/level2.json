@@ -1,0 +1,25 @@
+{
+    "assets": {
+        "map_tiles": { "type": "image", "source": "assets/images/tiles_spritesheet.png" },
+        "player_spritesheet": { "type": "spritesheet", "source": "assets/images/player_spritesheet.png", "frame_width": 28, "frame_height": 30, "frames": 5, "margin": 1, "spacing": 1 },
+        "slime_image": { "type": "image", "source": "assets/images/slime.png" },
+        "fly_spritesheet": { "type": "spritesheet", "source": "assets/images/fly_spritesheet.png", "frame_width": 37, "frame_height": 20, "frames": 2 },
+        "goal_image": { "type": "image", "source": "assets/images/goal.png" },
+        "checkpoint_image": { "type": "image", "source": "assets/images/checkpoint.png" },
+        "coin_image": { "type": "image", "source": "assets/images/coin.png" },
+        "level_tilemap": { "type": "tilemap", "source": "assets/maps/level2_map.json" }
+    },
+    "groups": [
+        "goals",
+        "checkpoints",
+        "coins",
+        "enemies",
+        "players",
+        "items",
+        "hud"
+    ],
+    "map": {
+        "key": "level_tilemap",
+        "tilesets": ["map_tiles"]
+    }
+}
